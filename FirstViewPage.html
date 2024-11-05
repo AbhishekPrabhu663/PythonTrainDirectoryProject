@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Directory</title>
+    <link rel="stylesheet" href="capstone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="body-custom">
+    <header>
+        <nav class="navbar-custom">
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/trains">Trains</a></li>
+                <li><a href="/schedule">Schedule</a></li>
+                <li><a href="/bookings">My Bookings</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container-custom">
+        <h1 class="heading-main">Welcome to the Train Directory</h1>
+
+        <section class="search-section-custom">
+            <h2 class="heading-secondary">Search Trains</h2>
+            <form id="searchForm" class="search-form-custom">
+                <div class="form-group-custom">
+                    <label for="source">Source:</label>
+                    <input type="text" id="source" name="source" class="input-text" placeholder="Enter source" required>
+                </div>
+                <div class="form-group-custom">
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" name="destination" class="input-text" placeholder="Enter destination" required>
+                </div>
+                <div class="form-group-custom">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" class="input-date" required>
+                </div>
+                <button type="submit" class="btn-custom">Search</button>
+            </form>
+        </section>
+
+        <section>
+            <h2 class="heading-secondary">Available Trains</h2>
+            <div id="trainList" class="train-list-custom">
+                <!-- Train results will be dynamically populated here -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-custom">
+        <p>&copy; 2024 Train Directory. All rights reserved.</p>
+    </footer>
+</body>
+</html>

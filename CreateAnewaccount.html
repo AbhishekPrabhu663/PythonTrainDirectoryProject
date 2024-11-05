@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="capstone.css"> <!-- Your custom CSS file -->
+</head>
+<body>
+    <form  method="POST">
+    <div class="container">
+        <h1 class="headingNewAccount text-center mt-3">Create New Account</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label for="full_name">Full Name</label>
+                    <input type="text" id="full_name" name="full_name" class="form-control" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" class="form-control" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Create a password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" class="form-control" placeholder="Confirm your password" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" id="mobile" name="mobile" class="form-control" placeholder="Enter your mobile number" required>
+                </div>
+                <div id="recaptcha-container"></div>
+                <div class="form-group">
+                    <button type="button" class="btn btn-secondary btn-block" onclick="sendOtp()">Send OTP</button>
+                </div>
+                <div class="form-group">
+                    <label for="otp">Enter OTP</label>
+                    <input type="text" id="otp" name="otp" class="form-control" placeholder="Enter the OTP received" required>
+                    <button type="button" class="btn btn-secondary btn-block" onclick="verifyOtp()">Verify OTP</button>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" onclick="FetchUserdata()">Create Account</button>
+                <div class="text-center mt-3">
+                    <a href="Login.html" class="text-primary">Already have an account? Log in</a> <!-- Link back to login -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Use Firebase v8 scripts -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-messaging.js"></script>
+
+    <script src="JS/capstone.js"></script>
+
+</body>
+</html>

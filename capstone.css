@@ -1,0 +1,205 @@
+.heading{
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top:2rem;
+  font-size: 90px;
+}
+.newaccount{
+  padding-left: 130px;
+}
+.headingNewAccount{
+  font-size: 50px;
+}
+
+
+body.reset-body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f3f4f6;
+    margin: 0;
+}
+.reset-container {
+    background: #ffffff;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.reset-title {
+    color: #333333;
+    margin-bottom: 1rem;
+}
+.reset-form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+.reset-form-label {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+.reset-form-input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s;
+}
+.reset-form-input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+.reset-button {
+    background-color: #3498db;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 0.75rem;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.reset-button:hover {
+    background-color: #2980b9;
+}
+.reset-message {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #e74c3c;
+}
+
+
+/* css of fisrt page */
+
+
+/* Body Styles */
+.body-custom {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Heading Styles */
+.heading-main,
+.heading-secondary {
+    text-align: center;
+    color: black; /* Green color for headings */
+}
+
+/* Navbar Styles */
+.navbar-custom {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar-custom ul {
+    list-style-type: none;
+    padding: 1rem;
+    margin: 1rem; /* Remove default margin */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the items */
+}
+
+.navbar-custom li {
+    margin: 0 10px; /* Add horizontal spacing between items */
+}
+
+.navbar-custom a {
+    color: white;
+    padding: 14px 20px; /* Adjust padding for better spacing */
+    text-decoration: none;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar-custom a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Container Styles */
+.container-custom {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Section Styles */
+.search-section-custom {
+    margin-bottom: 20px;
+}
+
+.search-form-custom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.form-group-custom {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-text,
+.input-date {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.input-text:focus,
+.input-date:focus {
+    border-color: #4CAF50; /* Highlight border color */
+}
+
+/* Button Styles */
+.btn-custom {
+    grid-column: span 3;
+    background-color: #b833ff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Train List Styles */
+.train-list-custom {
+    margin-top: 20px;
+}
+
+.train-item-custom {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Footer Styles */
+.footer-custom {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
